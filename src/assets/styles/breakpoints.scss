@@ -1,0 +1,18 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 320px;
+
+// ipads
+$screen-md-min: 768px;
+
+// Tablets and desktops
+$screen-lg-min: 1368px;
+
+$sm: (min: $screen-sm-min);
+$md: (min: $screen-md-min);
+$lg: (min: $screen-lg-min);
+
+@mixin breakpoint($map) {
+	@media screen and (min-width: #{map-get($map, min)}) {
+	  	@content;
+  	}
+}
