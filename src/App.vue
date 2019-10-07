@@ -1,22 +1,27 @@
 <template>
     <div id="app">
-        <router-view />
+        <Topbar />
+        <Home />
     </div>
 </template>
 <script>
+import Topbar from '@/components/Topbar'
+import Home from '@/views/home/Index'
+
 export default {
+    name: 'App',
     components: {
         Topbar,
-        Footer,
+        Home,
     },
-    name: 'App',
 };
 
 </script>
 <style lang="scss">
 #app {
-    @import url('https://fonts.googtleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
-    font-family: 'Montserrat', sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800,900&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+    font-family: 'Roboto', sans-serif;
     position: relative;
 }
 </style>

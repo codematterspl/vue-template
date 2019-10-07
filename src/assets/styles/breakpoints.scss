@@ -5,11 +5,13 @@ $screen-sm-min: 320px;
 $screen-md-min: 768px;
 
 // Tablets and desktops
-$screen-lg-min: 1368px;
+$screen-lg-min: 992px;
+$screen-elg-min: 1200px;
 
 $sm: (min: $screen-sm-min);
 $md: (min: $screen-md-min);
 $lg: (min: $screen-lg-min);
+$elg: (min: $screen-elg-min);
 
 @mixin breakpoint($map) {
 	@media screen and (min-width: #{map-get($map, min)}) {

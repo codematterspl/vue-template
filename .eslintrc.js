@@ -20,7 +20,7 @@ module.exports = {
         'func-names': ['off'],
         'space-before-function-paren': ['error', 'never'],
         'space-before-blocks': ['error', 'always'],
-        'comma-dangle': ['error', 'always-multiline'],
+        'comma-dangle': 0,
         'object-shorthand': ['error', 'always'],
         'no-param-reassign': ['off'],
         'one-var': ['error', 'consecutive'],

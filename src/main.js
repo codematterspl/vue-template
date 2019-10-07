@@ -5,7 +5,6 @@ import store from './store';
 import Icon from '@/components/Icon'
 
 Vue.config.productionTip = false;
-Vue.use(VueCarousel);
 
 Vue.component('Icon', Icon)
 

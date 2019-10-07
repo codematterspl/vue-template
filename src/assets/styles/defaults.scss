@@ -4,19 +4,24 @@
 }
 
 h1 {
-    font-size: 32px;
+    color: #000;
+    font-size: 16px;
     font-weight: 900;
+    text-transform: uppercase;
+    font-family: Montserrat;
 
     @include breakpoint($md) {
-        font-size: 48px;
+        font-size: 24px;
     }
 }
 
 h2 {
-    font-size: 16px;
-    font-weight: 900;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Montserrat;
 
     @include breakpoint($md) {
-        font-size: 24px;
+        font-size: 16px;
     }
 }

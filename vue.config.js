@@ -12,6 +12,14 @@ module.exports = {
             },
         },
     },
-
     lintOnSave: 'error',
+    configureWebpack: () => {
+        return {
+            resolve: {
+                alias: {
+                   assets: path.join(__dirname, 'src/assets'),
+               },
+            },
+        }
+    },
 };
